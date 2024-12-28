@@ -1,0 +1,16 @@
+data wragling kısmında ülke ve yatınlanama tarihi aynı kolonda verilmiş, burada sadece yayın yılı olacak şekilde tekrardan revize ediliyor
+language kısmında see more yazıları var, see more yerine yayınlandığı ülkeye göre dil yazılmış
+rating kolonu string yerine float değere çevrilmeli
+filmlerin süreleri saat ve dakika şeklinde içerisnde harfler bulunduruyor, bu direk dakikaya çevrilmiş
+sonrasında kaydetmiş
+
+Feature Select ipynb dosyasında da kaydettiği bu dosya üzerinde işlem yapmayadevam ediliyor
+önceye tabloya ait bazı özellikler bastırılmış, kolon sayısı, satır sayısı ...
+null kolon var mı kontrol edilmiş, her kolon için => hazı fonksiyon ile
+tabloda sadece yazı içeren(genre, description, name director vs) alınarak yeni tablo oluşturulmuş
+oluşturulan bu tablo imdbFeatures.csv olarak kaydedilmiş
+
+RecoSystem.ipynb dosyasında imdbFeatures.csv yüklüyor
+her genre türünden kaç tane tabloda olduğuna dair bir kod çalıştırıyor
+sonrasında noktlama işaretler parantezler vs temizleyip kalanlardan filmleri temsil eden kavramların bulunduğu listlere oluşturuyor
+Benzerliği ölçmek için cos ismilarity kullanıyor
